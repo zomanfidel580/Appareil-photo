@@ -1,0 +1,22 @@
+{
+  "name": "procam",
+  "version": "1.0.0",
+  "description": "ProCam - appareil photo pro",
+  "author": "ProCam",
+  "main": "main.js",
+  "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/filesystem": "^6.0.2",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.procam.app",
+    "productName": "ProCam",
+    "files": ["main.js", "www/**/*"],
+    "directories": { "output": "dist" },
+    "win": { "target": "portable" }
+  }
+}
